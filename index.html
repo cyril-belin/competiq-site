@@ -191,8 +191,8 @@
   <h2>Commander</h2>
   <p class="lead">Choisissez votre offre. Le paiement ouvre immédiatement l'accès au livrable.</p>
   <div class="cta-row">
-    <a class="btn" id="pay-kit" href="PAIEMENT_KIT_URL">Kit documentaire — 290 €</a>
-    <a class="btn" id="pay-audit" href="PAIEMENT_AUDIT_URL">Audit + dossier — 890 €</a>
+    <a class="btn" id="pay-kit" href="https://www.paypal.com/ncp/payment/XTSS897LQKE2N">Kit documentaire — 290 €</a>
+    <a class="btn" id="pay-audit" href="https://www.paypal.com/ncp/payment/VR92YMYRXH262">Audit + dossier — 890 €</a>
   </div>
   <p class="note">
     Un doute sur l'offre adaptée ? Écrivez à <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a> —
@@ -218,7 +218,7 @@
 
 <script>
   // Remplit les liens de paiement depuis la configuration (évite toute donnée codée en dur).
-  var CFG = { kit: "PAIEMENT_KIT_URL", audit: "PAIEMENT_AUDIT_URL" };
+  var CFG = { kit: "https://www.paypal.com/ncp/payment/XTSS897LQKE2N", audit: "https://www.paypal.com/ncp/payment/VR92YMYRXH262" };
   document.querySelectorAll("[data-offer]").forEach(function (a) {
     var k = a.getAttribute("data-offer");
     if (CFG[k] && CFG[k].indexOf("URL") === -1) { a.href = CFG[k]; }
