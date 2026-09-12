@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suis-je concerné par l'AI Act ? — Diagnostic gratuit en 8 questions</title>
+<meta name="description" content="Diagnostic gratuit : 8 questions pour savoir si votre PME est concernée par le règlement européen sur l'IA, quel est votre niveau d'exposition et par quoi commencer. Sans inscription.">
+<style>
+  :root{--ink:#0d1117;--muted:#5b6673;--line:#e3e8ee;--accent:#1a4fd6;--accent-dark:#12369a;--warn:#b3261e;--ok:#0f7b45;--soft:#f7f9fc;}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px}
+  header{border-bottom:1px solid var(--line);padding:15px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:700;font-size:17px}
+  .brand span{color:var(--accent)}
+  .brand a{color:inherit;text-decoration:none}
+  h1{font-size:33px;line-height:1.18;letter-spacing:-.025em;margin:34px 0 12px}
+  .lead{font-size:17.5px;color:var(--muted);margin:0 0 8px}
+  .meta{font-size:13.5px;color:var(--muted);margin-bottom:34px}
+  fieldset{border:none;padding:0;margin:0 0 26px}
+  legend{font-size:16.5px;font-weight:700;padding:0;margin-bottom:4px;display:block}
+  .hint{font-size:14px;color:var(--muted);margin:2px 0 12px}
+  label.opt{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px;cursor:pointer;transition:.12s}
+  label.opt:hover{border-color:#c3cee0;background:var(--soft)}
+  label.opt input{margin:4px 0 0;flex:0 0 auto}
+  label.opt.sel{border-color:var(--accent);background:#f2f6ff}
+  .txt{font-size:15.5px}
+  .sub{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;border:1px solid var(--accent-dark);border-radius:9px;padding:13px 22px;font-weight:600;font-size:16px;cursor:pointer}
+  .btn:hover{background:var(--accent-dark)}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .btn.ghost{background:#fff;color:var(--accent);border-color:var(--accent)}
+  .btn.ghost:hover{background:#f0f4ff}
+  #resultat{display:none;margin-top:10px}
+  .score{border-radius:14px;padding:24px;margin-bottom:22px}
+  .score h2{margin:0 0 6px;font-size:24px;letter-spacing:-.02em}
+  .score p{margin:0;font-size:16px}
+  .niveau-rouge{background:#fdf1f0;border:1px solid #f0cbc7}
+  .niveau-orange{background:#fff9e6;border:1px solid #f2e2b0}
+  .niveau-vert{background:#eefaf2;border:1px solid #bfe8cf}
+  .niveau-rouge h2,.niveau-orange h2{color:var(--warn)}
+  .niveau-vert h2{color:var(--ok)}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700}
+  ul.clean{list-style:none;padding:0;margin:8px 0 0}
+  ul.clean li{padding-left:24px;position:relative;margin-bottom:9px;font-size:15.5px}
+  ul.clean li:before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .card{border:1px solid var(--line);border-radius:12px;padding:22px;background:var(--soft);margin:22px 0}
+  .card h3{margin:0 0 10px;font-size:18px}
+  textarea{width:100%;min-height:130px;border:1px solid var(--line);border-radius:9px;padding:12px;font:14.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:#fff;resize:vertical}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}
+  .note{font-size:13.5px;color:var(--muted);margin-top:12px}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 60px;font-size:13px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  .flag{font-size:15px;color:var(--muted);border-left:3px solid var(--warn);padding-left:14px;margin:22px 0}
+  @media(max-width:640px){h1{font-size:26px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="brand"><a href="index.html">Competiq<span>.site</span></a></div>
+  <a class="btn ghost" style="padding:9px 15px;font-size:14px" href="index.html">Le kit complet</a>
+</div></header>
+
+<div class="wrap">
+  <h1>Suis-je concerné par l'AI Act&nbsp;?</h1>
+  <p class="lead">Huit questions. Pas d'inscription, pas de courriel demandé pour obtenir le résultat.</p>
+  <p class="meta">Le diagnostic s'exécute entièrement dans votre navigateur — aucune donnée n'est envoyée, aucun cookie n'est posé. Calendrier réglementaire vérifié en septembre 2026.</p>
+
+  <div class="flag">
+    Rappel du cadre : le règlement (UE) 2024/1689 s'applique à toute entreprise qui
+    <strong>utilise</strong> un système d'IA, pas seulement à celles qui le fabriquent. Les
+    obligations de transparence de l'article 50 sont en vigueur depuis le 2 août 2026 et la
+    littératie IA (article 4) depuis février 2025. Les obligations « haut risque » de
+    l'article 26 ont été reportées au 2 décembre 2027.
+  </div>
+
+  <form id="diag">
+
+    <fieldset>
+      <legend>1. Votre équipe utilise-t-elle un assistant d'IA&nbsp;?</legend>
+      <p class="hint">ChatGPT, Microsoft Copilot, Gemini, Claude, Notion AI, ou tout autre outil de rédaction, de synthèse ou de traduction assisté par IA.</p>
+      <label class="opt"><input type="radio" name="q1" value="2"><span class="txt">Oui, plusieurs personnes, avec des outils validés<span class="sub">Une gouvernance existe au moins partiellement</span></span></label>
+      <label class="opt"><input type="radio" name="q1" value="3"><span class="txt">Oui, mais chacun utilise ce qu'il veut<span class="sub">Situation la plus fréquente — et la plus exposée</span></span></label>
+      <label class="opt"><input type="radio" name="q1" value="0"><span class="txt">Non</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Un chatbot ou un assistant automatique répond-il à vos clients&nbsp;?</legend>
+      <p class="hint">Sur votre site, votre messagerie de support, vos réseaux sociaux ou votre standard téléphonique.</p>
+      <label class="opt"><input type="radio" name="q2" value="4"><span class="txt">Oui</span><span class="sub">Article 50 : mention obligatoire depuis le 2 août 2026</span></label>
+      <label class="opt"><input type="radio" name="q2" value="0"><span class="txt">Non</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Publiez-vous des contenus générés par IA&nbsp;?</legend>
+      <p class="hint">Textes, images, vidéos ou voix de synthèse diffusés à l'extérieur.</p>
+      <label class="opt"><input type="radio" name="q3" value="3"><span class="txt">Oui, régulièrement</span><span class="sub">Marquage du contenu généré requis</span></label>
+      <label class="opt"><input type="radio" name="q3" value="1"><span class="txt">Occasionnellement</span></label>
+      <label class="opt"><input type="radio" name="q3" value="0"><span class="txt">Non</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. L'IA intervient-elle dans le recrutement ou l'évaluation des salariés&nbsp;?</legend>
+      <p class="hint">Tri de candidatures, analyse d'entretiens, notation des performances, planification.</p>
+      <label class="opt"><input type="radio" name="q4" value="5"><span class="txt">Oui</span><span class="sub">Annexe III : régime du haut risque, échéance 2 décembre 2027</span></span></label>
+      <label class="opt"><input type="radio" name="q4" value="0"><span class="txt">Non</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. L'IA sert-elle à noter, tarifer ou évaluer des clients&nbsp;?</legend>
+      <p class="hint">Scoring de solvabilité, tarification personnalisée, détection de fraude, recouvrement.</p>
+      <label class="opt"><input type="radio" name="q5" value="5"><span class="txt">Oui</span><span class="sub">Solvabilité et crédit : annexe III, haut risque</span></label>
+      <label class="opt"><input type="radio" name="q5" value="0"><span class="txt">Non</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>6. Existe-t-il un registre écrit des systèmes d'IA utilisés&nbsp;?</legend>
+      <p class="hint">Un document qui liste chaque outil, sa finalité, les données traitées et le responsable.</p>
+      <label class="opt"><input type="radio" name="q6" value="0"><span class="txt">Oui, à jour</span></label>
+      <label class="opt"><input type="radio" name="q6" value="3"><span class="txt">Partiellement, ou pas à jour</span></label>
+      <label class="opt"><input type="radio" name="q6" value="4"><span class="txt">Non</span><span class="sub">C'est la première pièce demandée en cas de contrôle</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>7. Vos équipes ont-elles été sensibilisées à l'IA&nbsp;?</legend>
+      <p class="hint">Article 4 : obligation de moyen, la trace de l'action de formation fait foi.</p>
+      <label class="opt"><input type="radio" name="q7" value="0"><span class="txt">Oui, avec une trace conservée</span></label>
+      <label class="opt"><input type="radio" name="q7" value="3"><span class="txt">Non</span><span class="sub">Exigible depuis février 2025</span></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>8. Vos mentions de transparence sont-elles en place&nbsp;?</legend>
+      <p class="hint">Information de l'utilisateur qu'il parle à une IA, marquage des contenus générés.</p>
+      <label class="opt"><input type="radio" name="q8" value="0"><span class="txt">Oui</span></label>
+      <label class="opt"><input type="radio" name="q8" value="2"><span class="txt">Non, mais cela ne me concerne pas</span></label>
+      <label class="opt"><input type="radio" name="q8" value="4"><span class="txt">Non, et je pense être concerné</span><span class="sub">Exigible depuis le 2 août 2026</span></label>
+    </fieldset>
+
+    <button type="submit" class="btn" id="go">Voir mon diagnostic</button>
+  </form>
+
+  <div id="resultat"></div>
+</div>
+
+<footer><div class="wrap">
+  <p><a href="index.html">Accueil</a> · <a href="mentions-legales.html">Mentions légales</a> ·
+  <a href="cgv.html">CGV</a> · <a href="confidentialite.html">Confidentialité</a></p>
+  <p><strong>Ce diagnostic est un outil d'information, pas un conseil juridique.</strong>
+  Le résultat est une estimation fondée sur vos réponses, qui ne remplace ni l'examen de votre
+  situation réelle ni l'avis d'un avocat. Competiq — Cyril BELIN, entrepreneur individuel —
+  SIRET 503 561 318 00034 — TVA non applicable, art. 293 B du CGI.</p>
+</div></footer>
+
+<script>
+(function(){
+  var form = document.getElementById('diag');
+  var res = document.getElementById('resultat');
+  var reponses = {};
+
+  // Met en evidence l'option choisie
+  form.addEventListener('change', function(e){
+    if(e.target.type === 'radio'){
+      var n = e.target.name;
+      reponses[n] = {valeur: parseInt(e.target.value,10), libelle: (e.target.parentNode.querySelector('.txt').childNodes[0].textContent || '').trim()};
+      var groupe = form.querySelectorAll('input[name="'+n+'"]');
+      for(var i=0;i<groupe.length;i++){ groupe[i].parentNode.classList.remove('sel'); }
+      e.target.parentNode.classList.add('sel');
+    }
+  });
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var manquantes = [];
+    for(var i=1;i<=8;i++){ if(!reponses['q'+i]) manquantes.push(i); }
+    if(manquantes.length){
+      alert('Il reste ' + manquantes.length + ' question(s) sans réponse. Répondez à toutes les questions pour obtenir un diagnostic fiable.');
+      return;
+    }
+
+    var exposition = reponses.q1.valeur + reponses.q2.valeur + reponses.q3.valeur
+                   + reponses.q4.valeur + reponses.q5.valeur;
+    var maturite = reponses.q6.valeur + reponses.q7.valeur + reponses.q8.valeur;
+    var total = exposition + maturite;
+
+    var niveau, titre, phrase;
+    if(total >= 20){
+      niveau = 'rouge';
+      titre = 'Exposition élevée — à traiter en priorité';
+      phrase = "Votre situation combine des usages d'IA au contact de personnes et une absence de documentation. C'est exactement le profil qu'un contrôle ou qu'un questionnaire client met en difficulté. La bonne nouvelle : l'essentiel se règle par des documents, pas par des développements.";
+    } else if(total >= 10){
+      niveau = 'orange';
+      titre = 'Exposition modérée — des manques identifiés';
+      phrase = "Vous avez engagé une partie du travail, mais il reste des trous. Les obligations les plus immédiates — transparence et sensibilisation — ne sont pas couvertes, et le registre n'est pas fiable.";
+    } else {
+      niveau = 'vert';
+      titre = 'Exposition faible — surveiller';
+      phrase = "Votre usage de l'IA reste limité et documenté. Le sujet n'est pas urgent pour vous, mais il faut le revoir une fois par an, et à chaque nouvel outil adopté.";
+    }
+
+    var actions = [];
+    if(reponses.q2.valeur > 0) actions.push("<strong>Mettre en place la mention de transparence</strong> sur votre chatbot — article 50, exigible depuis le 2 août 2026. C'est la mesure la plus rapide de tout le dispositif : moins d'une heure.");
+    if(reponses.q3.valeur > 0) actions.push("<strong>Marquer vos contenus générés</strong> (mention visible et métadonnées de provenance conservées) — article 50 §2.");
+    if(reponses.q6.valeur >= 3) actions.push("<strong>Constituer le registre des systèmes d'IA</strong> : c'est la pièce centrale, celle qui conditionne toutes les autres. Un tableur suffit, à condition d'être à jour.");
+    if(reponses.q7.valeur >= 3) actions.push("<strong>Organiser une session de sensibilisation</strong> et en conserver la trace — article 4, exigible depuis février 2025.");
+    if(reponses.q8.valeur >= 4) actions.push("<strong>Vérifier systématiquement vos points de contact</strong> avant de publier un nouvel usage d'IA.");
+    if(reponses.q1.valeur >= 3) actions.push("<strong>Encadrer les usages non validés</strong> (« shadow AI ») par une politique interne : c'est le point de fuite le plus courant, et il pose aussi des questions de confidentialité au titre du RGPD.");
+    if(reponses.q4.valeur > 0) actions.push("<strong>Usages RH : anticiper dès maintenant.</strong> Le régime du haut risque s'applique au 2 décembre 2027 — supervision humaine effective, information des candidats et des salariés, journalisation conservée au moins six mois. Le travail se fait maintenant, pas la veille.");
+    if(reponses.q5.valeur > 0) actions.push("<strong>Scoring ou tarification client : même anticipation</strong>, avec en plus une vigilance sur les biais, qui relève aussi du RGPD.");
+    if(!actions.length) actions.push("Aucune action urgente. Revoyez ce diagnostic une fois par an et à chaque nouvel outil adopté.");
+
+    var recap = "Votre diagnostic AI Act — Competiq\n"
+      + "Score : " + total + "/30 (" + titre + ")\n\n"
+      + "Mes réponses :\n"
+      + "1. Assistants IA : " + reponses.q1.libelle + "\n"
+      + "2. Chatbot client : " + reponses.q2.libelle + "\n"
+      + "3. Contenus générés : " + reponses.q3.libelle + "\n"
+      + "4. IA en RH : " + reponses.q4.libelle + "\n"
+      + "5. IA sur les clients : " + reponses.q5.libelle + "\n"
+      + "6. Registre des systèmes : " + reponses.q6.libelle + "\n"
+      + "7. Sensibilisation des équipes : " + reponses.q7.libelle + "\n"
+      + "8. Mentions de transparence : " + reponses.q8.libelle + "\n\n"
+      + "Merci de m'envoyer la grille de qualification complète et votre lecture de ma situation.\n";
+
+    var lienMail = "mailto:contact@competiq.site"
+      + "?subject=" + encodeURIComponent("Mon diagnostic AI Act — score " + total + "/30")
+      + "&body=" + encodeURIComponent(recap);
+
+    var html = ''
+      + '<div class="score niveau-' + niveau + '">'
+      +   '<h2>' + titre + '</h2>'
+      +   '<p>' + phrase + '</p>'
+      + '</div>'
+      + '<table><tr><th>Dimension</th><th>Score</th><th>Lecture</th></tr>'
+      +   '<tr><td>Exposition (usages d\'IA)</td><td>' + exposition + ' / 19</td><td>Ce que vous faites, et donc ce que le règlement attend de vous.</td></tr>'
+      +   '<tr><td>Maturité (documentation)</td><td>' + maturite + ' / 11</td><td>Ce que vous pouvez prouver aujourd\'hui. C\'est presque toujours le plus faible.</td></tr>'
+      + '</table>'
+      + '<h3 style="font-size:19px;margin-top:28px">Par quoi commencer, dans votre cas</h3>'
+      + '<ul class="clean">' + actions.map(function(a){return '<li>'+a+'</li>';}).join('') + '</ul>'
+      + '<div class="card">'
+      +   '<h3>Recevez la grille de qualification complète</h3>'
+      +   '<p style="margin:0 0 10px;font-size:15.5px">Elle détaille les quatre niveaux de risque, l\'arbre de décision et les six usages à vérifier en priorité. Deux pages, gratuit, envoyé par courriel.</p>'
+      +   '<textarea readonly id="recap">' + recap + '</textarea>'
+      +   '<div class="cta-row">'
+      +     '<a class="btn" href="' + lienMail + '" id="mailto">Recevoir la grille par courriel</a>'
+      +     '<button class="btn ghost" id="copier" type="button">Copier le récapitulatif</button>'
+      +   '</div>'
+      +   '<p class="note">Le bouton ouvre votre logiciel de messagerie avec le récapitulatif déjà rédigé. Vous pouvez aussi écrire directement à <a href="mailto:contact@competiq.site">contact@competiq.site</a>. Aucun envoi automatique, aucune inscription : si vous ne m\'écrivez pas, vous ne recevrez rien.</p>'
+      + '</div>'
+      + '<div class="card">'
+      +   '<h3>Si vous préférez déléguer</h3>'
+      +   '<p style="margin:0;font-size:15.5px">Le <a href="index.html">Kit Conformité IA</a> contient les neuf documents correspondant à ces actions — registre pré-rempli de 40 outils courants, politique interne, notices de transparence, procédure de supervision et de journalisation, plan de sensibilisation, checklist et clauses fournisseurs. <strong>290 € HT.</strong> L\'accompagnement complet, avec inventaire réel de vos systèmes et documents rédigés à votre nom, est à <strong>890 € HT</strong>.</p>'
+      + '</div>'
+      + '<p class="note">Diagnostic établi à partir de vos seules réponses. Il s\'agit d\'un outil d\'information et non d\'un conseil juridique : seul un avocat peut délivrer une consultation juridique. Calendrier vérifié en septembre 2026.</p>';
+
+    res.innerHTML = html;
+    res.style.display = 'block';
+    document.getElementById('copier').addEventListener('click', function(){
+      var t = document.getElementById('recap');
+      t.select(); t.setSelectionRange(0, 99999);
+      try{ document.execCommand('copy'); this.textContent = 'Récapitulatif copié'; }
+      catch(e){ this.textContent = 'Sélectionnez le texte pour le copier'; }
+    });
+    res.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+})();
+</script>
+</body>
+</html>
