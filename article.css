@@ -1,0 +1,34 @@
+:root{--ink:#0d1117;--muted:#5b6673;--line:#e3e8ee;--accent:#1a4fd6;--soft:#f7f9fc;--warn:#b3261e;--ok:#0f7b45;}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line);padding:15px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:960px}
+.brand{font-weight:700;font-size:17px}
+.brand span{color:var(--accent)}
+.brand a{color:inherit;text-decoration:none}
+nav.top{font-size:14px;color:var(--muted)}
+nav.top a{color:var(--muted);text-decoration:none;margin-left:14px}
+nav.top a:hover{color:var(--accent)}
+h1{font-size:34px;line-height:1.16;letter-spacing:-.025em;margin:40px 0 14px}
+h2{font-size:23px;letter-spacing:-.015em;margin:40px 0 12px}
+h3{font-size:18px;margin:26px 0 8px}
+p{margin:0 0 16px}
+.lead{font-size:19px;color:var(--muted);margin-bottom:14px}
+.meta{font-size:13.5px;color:var(--muted);margin-bottom:30px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+a{color:var(--accent)}
+ul,ol{margin:0 0 16px;padding-left:24px}
+li{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15.5px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:700}
+.callout{border-left:3px solid var(--accent);background:var(--soft);padding:16px 18px;margin:24px 0;font-size:16px}
+.callout.warn{border-color:var(--warn);background:#fdf7f6}
+.cta{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--soft);margin:36px 0}
+.cta h3{margin:0 0 10px;font-size:19px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;border:1px solid #12369a;border-radius:9px;padding:12px 20px;font-weight:600;font-size:15.5px}
+.btn:hover{background:#12369a}
+.btn.ghost{background:#fff;color:var(--accent);border-color:var(--accent)}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 64px;font-size:13px;color:var(--muted)}
+footer a{color:var(--accent)}
+@media(max-width:640px){h1{font-size:27px}h2{font-size:20px}.lead{font-size:17px}}
