@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Act et RGPD : deux régimes qui se cumulent, et comment ne pas travailler deux fois</title>
+<meta name="description" content="L'AI Act ne remplace pas le RGPD : les deux s'appliquent en même temps. Points de recouvrement, différences, et la méthode pour traiter les deux dans un seul dossier.">
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="brand"><a href="index.html">Competiq<span>.site</span></a></div>
+  <nav class="top"><a href="test-conformite.html">Diagnostic gratuit</a><a href="index.html#offres">Le kit</a></nav>
+</div></header>
+
+<div class="wrap">
+  <h1>AI Act et RGPD : deux régimes qui se cumulent</h1>
+  <p class="lead">Le règlement européen sur l'IA ne remplace pas le RGPD et n'en dispense pas. Les deux s'appliquent en même temps, au même système — et c'est une bonne nouvelle, à condition de ne pas produire deux dossiers séparés.</p>
+  <p class="meta">Mis à jour en septembre 2026.</p>
+
+  <h2>Deux textes, deux objets</h2>
+  <p>Le malentendu le plus courant consiste à croire qu'il faut choisir. Un système d'IA qui traite des données personnelles relève <strong>simultanément</strong> des deux :</p>
+  <table>
+    <tr><th></th><th>RGPD</th><th>AI Act</th></tr>
+    <tr>
+      <td>Ce qu'il protège</td>
+      <td>Les personnes, à travers leurs données</td>
+      <td>Les personnes, à travers l'usage qui est fait du système</td>
+    </tr>
+    <tr>
+      <td>Question centrale</td>
+      <td>Ai-je le droit de traiter ces données, et comment ?</td>
+      <td>Cet usage est-il autorisé, et que dois-je en dire ?</td>
+    </tr>
+    <tr>
+      <td>Applicable depuis</td>
+      <td>25 mai 2018</td>
+      <td>Échelonné de février 2025 à août 2028</td>
+    </tr>
+    <tr>
+      <td>Autorité en France</td>
+      <td>CNIL</td>
+      <td>CNIL et autorités sectorielles selon le domaine</td>
+    </tr>
+  </table>
+  <p>Autrement dit : le RGPD vous demandait déjà si vous pouviez traiter la donnée. L'AI Act vous demande en plus si l'usage lui-même est admissible, et ce que vous en dites aux personnes.</p>
+
+  <h2>Les quatre points de recouvrement</h2>
+
+  <h3>1. L'information des personnes</h3>
+  <p>C'est le recouvrement le plus évident. L'article 50 de l'AI Act impose d'informer celui qui interagit avec une IA ; les articles 13 et 14 du RGPD imposent déjà d'informer sur le traitement. <strong>Les deux se traitent dans le même paragraphe.</strong> Produire deux mentions distinctes pour le même système est une perte de temps et une source d'incohérence.</p>
+
+  <h3>2. La décision automatisée</h3>
+  <p>L'article 22 du RGPD encadre strictement la décision entièrement automatisée produisant un effet juridique ou significatif. L'AI Act impose une supervision humaine effective. Ici, la conformité au second est la preuve du premier : une procédure de supervision humaine documentée, avec un responsable nommé et un pouvoir réel d'inverser la décision, sert les deux textes.</p>
+
+  <h3>3. Les analyses d'impact</h3>
+  <p>Le RGPD prévoit une analyse d'impact relative à la protection des données (AIPD, article 35) pour les traitements à risque élevé. L'AI Act prévoit une analyse d'impact sur les droits fondamentaux (FRIA, article 27) pour certains déployeurs. <strong>Les deux documents se ressemblent fortement</strong> : finalité, nécessité, proportionnalité, risques pour les personnes, mesures d'atténuation. Un seul travail bien mené nourrit les deux, avec des sections spécifiques.</p>
+
+  <h3>4. La minimisation et la qualité des données</h3>
+  <p>Le RGPD impose la minimisation ; l'AI Act impose des exigences sur les jeux de données d'entraînement. Pour un déployeur, la question pratique est la même : quelles données entrent dans le système, et sont-elles nécessaires ?</p>
+
+  <div class="callout">
+    <strong>La règle de travail à retenir.</strong> Un seul registre, qui porte à la fois les colonnes du RGPD (base légale, durée de conservation, personnes concernées) et celles de l'AI Act (rôle, qualification du risque, supervision humaine, journalisation). Deux colonnes de plus sur un document que vous avez déjà, plutôt qu'un second document à tenir.
+  </div>
+
+  <h2>Ce que le RGPD ne couvre pas</h2>
+  <p>Trois obligations de l'AI Act n'ont pas d'équivalent côté données personnelles, et c'est précisément là que les entreprises se croient protégées à tort :</p>
+  <ul>
+    <li><strong>L'interdiction de certains usages</strong> (article 5). Un traitement parfaitement licite au regard du RGPD peut être un usage d'IA purement interdit.</li>
+    <li><strong>Le marquage des contenus générés.</strong> Le RGPD ne dit rien d'une image de synthèse ; l'article 50 impose de la signaler.</li>
+    <li><strong>La littératie IA.</strong> Aucune obligation de formation n'existe dans le RGPD.</li>
+  </ul>
+
+  <h2>Ce que l'AI Act ne couvre pas</h2>
+  <p>Symétriquement, le respect de l'AI Act ne vous dispense de rien côté RGPD : base légale, durées de conservation, droits des personnes, sécurité, registre des traitements, contrats de sous-traitance. Un dossier AI Act complet peut parfaitement coexister avec un manquement caractérisé au RGPD — c'est même une combinaison fréquente, parce que la documentation IA est récente alors que le RGPD était censé être traité depuis 2018.</p>
+
+  <h2>L'ordre de travail le plus efficace</h2>
+  <ol>
+    <li><strong>Partez du registre des systèmes d'IA</strong>, en y intégrant les colonnes RGPD dès la conception.</li>
+    <li><strong>Faites l'inventaire des données</strong> entrant dans chaque système. C'est la charnière entre les deux régimes.</li>
+    <li><strong>Traitez l'information des personnes</strong> une seule fois, en couvrant les deux obligations dans la même rédaction.</li>
+    <li><strong>Documentez la supervision humaine</strong> comme réponse commune à l'article 22 du RGPD et aux obligations de l'AI Act.</li>
+    <li><strong>Ne produisez l'AIPD et la FRIA ensemble</strong> que si vous êtes effectivement concerné — c'est le cas des organismes publics et de certains services essentiels, pas de la majorité des PME.</li>
+  </ol>
+
+  <div class="cta">
+    <h3>Savez-vous où vous en êtes sur les deux textes ?</h3>
+    <p>Le diagnostic gratuit porte sur l'AI Act, mais les questions sur les données personnelles y sont intégrées. Huit questions, résultat immédiat, sans inscription.</p>
+    <p style="margin-bottom:0"><a class="btn" href="test-conformite.html">Faire le diagnostic gratuit</a></p>
+  </div>
+
+  <div class="cta">
+    <h3>Le registre livré gère déjà les deux</h3>
+    <p>Le registre du <a href="index.html#offres">Kit Conformité IA</a> comporte les colonnes des deux régimes : base légale et durée de conservation d'un côté, rôle, qualification du risque et supervision humaine de l'autre. <strong>290 € HT</strong> pour les neuf documents.</p>
+  </div>
+
+  <p><em>Document d'information, non constitutif d'un conseil juridique. Pour une qualification engageante, consultez un avocat ou votre délégué à la protection des données.</em></p>
+</div>
+
+<footer><div class="wrap">
+  <a href="index.html">Accueil</a> · <a href="test-conformite.html">Diagnostic gratuit</a> ·
+  <a href="ai-act-pme.html">AI Act et PME</a> ·
+  <a href="registre-systemes-ia.html">Registre des systèmes d'IA</a> ·
+  <a href="mentions-transparence-ia.html">Mentions de transparence</a> ·
+  <a href="sanctions-ai-act.html">Sanctions</a> ·
+  <a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV</a>
+  <p>Competiq — Cyril BELIN, entrepreneur individuel (micro-entreprise) — SIRET 503 561 318 00034 — TVA non applicable, art. 293 B du CGI.</p>
+</div></footer>
+</body></html>
